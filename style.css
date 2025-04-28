@@ -201,8 +201,13 @@ footer p, footer a {
   width:30%;
   display: flex;
   align-items: center;
-
+  flex-direction: column;
 }
+
+#gal p, #gal h4 {
+  margin: 0px;
+}
+
 
 .gallery img {
   border-radius: 15px;
