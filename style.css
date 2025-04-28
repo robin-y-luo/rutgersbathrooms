@@ -213,3 +213,8 @@ footer p, footer a {
   border-radius: 15px;
   width:100%;
 }
+
+/* news */
+.news div {
+  background-color: white;
+}
