@@ -1,3 +1,24 @@
+header {
+  position: sticky;
+  top: 0;
+  background-color: #E31D38;
+  width:100%;
+}
+
+header img {
+  /* padding-left: 20px; */
+  padding-right: 200px;
+}
+
+/*
+#content {
+  margin-top: 100px;
+} */
+
+.site-logo {
+  height: 32px;
+}
+
 #landing {
   display: flex;
   flex-direction: column;
@@ -54,6 +75,11 @@ p {
   justify-content: space-evenly;
   font-size: 30px;
   font-style: italic;
+  align-items: flex-end;
+}
+
+.site-nav {
+  padding-bottom: 20px;
 }
 
 nav a {
@@ -144,15 +170,24 @@ footer p, footer a {
 }
 
 /* about */
-/* .team {
-  background-color: white;
-  border-color: black;
-  border-style:inset;
+.team div {
+  /* /* background-color: white; */
+  border-color: white;
+  /* border-style:inset;
   border-radius: 25px;
-  padding: 20px;
-} */
+  padding: 20px; */
+}
+
+#member {
+  padding:15px;
+  border-radius: 25px;;
+}
 
 /* gallery */
+#gal {
+  border-color: white;
+}
+
 .gallery {
   flex-direction: column;
 }
