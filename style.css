@@ -6,6 +6,15 @@ body {
   font-style: normal;
 }
 
+a {
+  color:#E31D38;
+  text-decoration: none;
+}
+
+a:hover {
+  color:black;
+}
+
 p {
   background-color: white;
 }
