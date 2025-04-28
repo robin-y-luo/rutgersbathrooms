@@ -1,3 +1,21 @@
+#landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 60px;
+}
+
+#landing img {
+  width:100%;
+}
+
+#landing a {
+  color: white;
+}
+#landing a:hover {
+  color: black;
+}
+
 body {
   background-color: #E31D38;
   font-family: "Pixelify Sans", sans-serif;
