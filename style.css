@@ -6,7 +6,7 @@ body {
   font-style: normal;
 }
 
-.site-header, p {
+p {
   background-color: white;
 }
 
@@ -25,13 +25,14 @@ body {
 .site-header {
   display: flex;
   justify-content: space-evenly;
-  font-size: 25px;
+  font-size: 30px;
   font-style: italic;
 }
 
 nav a {
   text-decoration: none;
-  color:#E31D38;
+  color:white;
+  /* color:#E31D38; */
 }
 
 nav a:hover {
