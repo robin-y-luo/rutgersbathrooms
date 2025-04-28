@@ -63,12 +63,12 @@ h3 {
   margin: 10px;
 }
 
-.showcase {
+.showcase, .team, .gallery {
   display: flex;
   /* align-items: center; */
   /* flex-direction: column; */
   align-items: flex-start;
-
+  justify-content: space-evenly;
 }
 
 .showcase-item img {
@@ -123,4 +123,27 @@ footer p, footer a {
   border-style:dotted;
   padding: 10px;
   margin: 5px;
+}
+
+/* about */
+/* .team {
+  background-color: white;
+  border-color: black;
+  border-style:inset;
+  border-radius: 25px;
+  padding: 20px;
+} */
+
+/* gallery */
+.gallery {
+  flex-direction: column;
+}
+
+.gallery div {
+  /* width: 75%; */
+  padding: 20px;
+}
+
+.gallery img {
+  border-radius: 25px;
 }
