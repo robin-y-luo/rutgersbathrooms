@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Trash of the Week Project - Ghost Map</title>
+	<script src="https://kit.fontawesome.com/6040eabcf1.js" crossorigin="anonymous"></script>
+	<link href="images/trashcan-favicon.svg" rel="icon">
+    <link rel="stylesheet" href="twp.css" type="text/css">
+
+	<style>
+		/* CSS should go in your main CSS file*/
+
+		/* visual essay (map) css */
+
+		.worldmap {
+			width: 914px;
+			height: 600px;
+			border: solid #5a5a5a 1px;
+			background: url(images/haunted-house-map-914.png) no-repeat, url(images/600px-grid.svg);
+			padding: 0;
+			margin: 0; /* adjust as needed */
+			position: relative;
+		}
+
+		.worldmap-item {
+			font-size: 48px;  /* controls the size of the icon */
+			position: absolute;
+			background: white;
+			padding: 12px;
+			border: solid #5a5a5a 2px;
+			border-radius: 12px;
+			}
+
+		#worldmap-item-newyork {
+			top: 394px;
+			left: 224px;
+			}
+
+		#worldmap-item-capetown {
+			top: 402px;
+			left: 476px;
+			}
+
+		#worldmap-item-london {
+			top: 149px;
+			left: 425px;
+			}
+
+		#worldmap-item-shanghai {
+			top: 170px;
+			left: 510px;
+			}
+
+		.icon-blue {color:#F32196;}
+		.icon-blue span {display: none;}
+		.icon-blue:hover span {display: inline;}
+		.icon-blue:hover {color:#2196F3;}
+
+		.worldmap-item span {font-size: 10px; color: #f32196; float: right; background: #efecb4; padding: 3px; margin-left: 3px;}
+
+		.credit-caption {font-size: 75%; margin: .25em 0;}
+		.credit-caption a {color: #8a8a8a; text-decoration: none;}
+		.credit-caption a:hover {color: #bababa; text-decoration: underline;}
+
+		.location-catalog h3 {color:#2196F3;}
+
+		.location-profile {
+			display: flex;
+			gap: 18px;
+			margin: 0 0 2em;
+		}
+
+		.location-image {
+			border: solid #cacaca 1px;
+			width: 300px;
+			height: 300px;
+			flex-grow: 0;
+			flex-shrink: 0;
+			}
+
+		.location-description p {
+			margin-top: 0;
+		}
+
+	  </style>
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="site-header">
+        <nav class="site-nav">
+			<a href="twp-home.html">
+		   		<img class="site-logo" src="images/trashcan-logo.svg" alt="Trash of the Week Project">
+			</a>
+			<a href="twp-reviews.html">Reviews</a>
+			<a href="twp-gallery.html">Pictorial</a>
+			<a href="twp-survey.html">Survey</a>
+			<a href="twp-about.html">About</a>
+        </nav>
+      </header>
+
+      <main>
+
+		  <h1 class="primary-statement">Great <em>Hauntings</em> from around the World</h1>
+
+		<section class="worldmap-intro">
+			<div class="worldmap">
+				<a href="#newyork"><i class="fa-solid fa-ghost icon-blue worldmap-item" id="worldmap-item-newyork"><span>New York</span></i></a>
+				<a href="#capetown"><i class="fa-solid fa-ghost icon-blue worldmap-item" id="worldmap-item-capetown"><span>Cape Town</span></i></a>
+				<a href="#"><i class="fa-solid fa-ghost icon-blue worldmap-item" id="worldmap-item-shanghai"><span>Shanghai</span></i></a>
+				<a href="#london"><i class="fa-solid fa-ghost icon-blue worldmap-item" id="worldmap-item-london"><span>London</span></i></a>
+			</div>
+			<p class="credit-caption">World map graphic by Al MacDonald via <a href="https://en.m.wikipedia.org/wiki/File:World_map_-_low_resolution.svg" target="_blank">Wikipedia</a></p>
+			<p>This visual essay documents where in the world I acquired some of the items I've thrown away, recycled, or donated since starting this project in January 2019. The <strong>catalog</strong> below documents how, where, and when each item was acquired, why it was acquired, and how it was disposed off.</p>
+			<p>If you find this essay interesting, I recommend taking a look at its companion essay, <a href="#">Great Trash Cans from around the World</a>, which documents some of the finer receptacles I've encountered on my travels.</p>
+
+		  </section>
+
+		  <section class="location-catalog">
+			  <h3 id="newyork">New York, USA</h3>
+
+			  <div class="location-profile">
+				  <div class="location-image"><img src="images/newyork-trash-300.jpg" alt="Photo of trash in New York"></div>			<div class="location-description"><p>Pellentesque habitant <a href="https://en.wikipedia.org/wiki/New_York_City" target="_blank">New York City</a> morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate <a href="">magna eros</a> eu erat. Aliquam erat volutpat, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. </p></div>
+			  </div>
+
+			  <h3 id="london">London, UK</h3>
+			  <div class="location-profile">
+				  <div class="location-image"><img src="images/london-trash-300.jpg" alt="Photo of trash in London"></div>
+				  <div class="location-description"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada <a href="https://en.wikipedia.org/wiki/London" target="_blank">London</a> fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis <a href="">tempus lacus</a> enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat.</p></div>
+			  </div>
+
+			  <h3 id="capetown">Cape Town, South Africa</h3>
+			  <div class="location-profile">
+				  <div class="location-image"><img src="images/capetown-trash-300.jpg" alt="Photo of trash in Cape Town"></div>			<div class="location-description"><p>Pellentesque habitant morbi <a href="https://en.wikipedia.org/wiki/Cape_Town" target="_blank">Cape Town</a> tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, <a href="">tempor sit amet</a>, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat.</p></div>
+			  </div>
+		  </section>
+
+
+      </main>
+      <footer class="site-footer">
+		  <p>&copy; 2023 Trash of the Week Projections</p>
+      </footer>
+    </div> <!-- wrapper ends -->
+  </body>
+</html>

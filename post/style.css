@@ -1,0 +1,306 @@
+header {
+  position: sticky;
+  top: 0;
+  background-color: #E31D38;
+  width:100%;
+}
+
+header img {
+  /* padding-left: 20px; */
+  padding-right: 200px;
+}
+
+/*
+#content {
+  margin-top: 100px;
+} */
+
+.site-logo {
+  height: 32px;
+}
+
+#landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 60px;
+  padding: 20px;
+}
+
+#landing img {
+  width:100%;
+}
+
+#landing a {
+  color: white;
+}
+#landing a:hover {
+  color: black;
+}
+
+body {
+  background-color: #E31D38;
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+
+a {
+  color:#E31D38;
+  text-decoration: none;
+}
+
+a:hover {
+  color:black;
+}
+
+p {
+  background-color: white;
+}
+
+.primary-statement {
+  font-size: 55px;
+  margin: 0px;
+}
+
+.secondary-statement {
+  background-color: transparent;
+  color: white;
+  font-size: 45px;
+  margin: 0px;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 30px;
+  font-style: italic;
+  align-items: flex-end;
+}
+
+.site-nav {
+  padding-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color:white;
+  /* color:#E31D38; */
+}
+
+nav a:hover {
+  color:black;
+}
+
+p {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 40px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 30px;
+  margin: 10px;
+}
+
+.showcase, .team {
+  display: flex;
+  /* align-items: center; */
+  /* flex-direction: column; */
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.showcase-item img {
+  width: 100%;
+}
+
+.showcase-item {
+  border-radius: 25px;
+  background: white;
+  padding: 20px;
+  margin: 10px;
+  width: 30%;
+  /* height: 450px; */
+}
+
+footer p, footer a {
+  background-color: black;
+  color: white;
+}
+
+/* reviews */
+.article {
+  border-radius: 25px;
+  background: white;
+  padding: 20px;
+  margin: 20px;
+
+}
+
+.article img {
+  display: block;
+  width: 75%;
+  margin: auto;
+}
+
+.emph {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.category {
+  border-color: black;
+  border-radius: 25px;
+  border-style: double;
+  padding: 10px;
+  margin: 5px;
+}
+
+.check {
+  border-color: black;
+  border-radius: 25px;
+  border-style:dotted;
+  padding: 10px;
+  margin: 5px;
+}
+
+/* about */
+.team div {
+  /* /* background-color: white; */
+  border-color: white;
+  /* border-style:inset;
+  border-radius: 25px;
+  padding: 20px; */
+}
+
+#member {
+  padding:15px;
+  border-radius: 25px;;
+}
+
+/* gallery */
+#gal {
+  border-color: white;
+}
+
+.gallery {
+  /* flex-direction: column; */
+  display: flex;
+  /* align-items: center; */
+}
+
+.gallery div {
+  /* width: 75%; */
+  padding: 20px;
+  width:30%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#gal p, #gal h4 {
+  margin: 0px;
+}
+
+
+.gallery img {
+  border-radius: 15px;
+  width:100%;
+}
+
+/* news */
+.news div {
+  background-color: white;
+}
+
+/* MAP */
+.worldmap {
+  width: 914px;
+  height: 600px;
+  border: solid #5a5a5a 1px;
+  background: url(../images/map.png) no-repeat, url(images/600px-grid.svg);
+  padding: 0;
+  margin: 0; /* adjust as needed */
+  position: relative;
+}
+
+.worldmap-item {
+  font-size: 48px;  /* controls the size of the icon */
+  position: absolute;
+  background: white;
+  padding: 12px;
+  border: solid #5a5a5a 2px;
+  border-radius: 12px;
+  }
+
+#worldmap-item-makerspace {
+  top: 40px;
+  left: 700px;
+  }
+
+#worldmap-item-tillet {
+  top: 180px;
+  left: 690px;
+  }
+
+#worldmap-item-rec {
+  top: 495px;
+  left: 795px;
+  }
+
+#worldmap-item-library {
+  top: 220px;
+  left: 620px;
+  }
+
+#worldmap-item-student {
+  top: 160px;
+  left: 520px;
+}
+
+#worldmap-item-dining {
+  top: 260px;
+  left: 540px;
+}
+
+#worldmap-item-towers {
+  top: 85px;
+  left: 600px;
+}
+
+.icon-blue {color:#000000;}
+.icon-blue span {display: none;}
+.icon-blue:hover span {display: inline;}
+.icon-blue:hover {color:#E31D38}
+
+.worldmap-item span {font-size: 10px; color: #000000; float: right; background: #efecb4; padding: 3px; margin-left: 3px;}
+
+.credit-caption {font-size: 75%; margin: .25em 0;}
+.credit-caption a {color: #8a8a8a; text-decoration: none;}
+.credit-caption a:hover {color: #bababa; text-decoration: underline;}
+
+.location-catalog h3 {color:#000000;}
+
+.location-profile {
+  display: flex;
+  gap: 18px;
+  margin: 0 0 2em;
+}
+
+.location-image {
+  border: solid #cacaca 1px;
+  width: 300px;
+  /* height: 300px; */
+  flex-grow: 0;
+  flex-shrink: 0;
+  }
+
+.location-description p {
+  margin-top: 0;
+}

@@ -1,0 +1,322 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #3a3a3a;
+	background: #5a5a5a;
+	font-family: verdana, helvetica, arial, sans-serif; 
+    font-size: 20px;
+    line-height: 150%;  /* adjust as needed */	
+}
+
+.wrapper {
+    background: #ffffff;
+    width: 980px;  /* give the element a fixed width */ 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+a {
+	color: #2196F3;
+}
+
+a:hover {
+	color: #F32196;
+	text-decoration: none;
+}
+	
+		
+		
+/* site header and footer CSS */		
+		
+.site-header, .site-footer {
+	background: #bb3456;
+	padding: 20px 40px;
+	}
+
+.site-header {
+	margin-bottom: 2em;
+}
+
+.site-logo	{	
+	height: 32px;
+	margin-right: 32px;
+  	}	
+
+.site-nav {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 18px;
+	}
+		
+.site-nav a {
+	color: #fff;
+	text-decoration: none;
+  	}
+		
+.site-nav a:hover {
+	color: yellowgreen;
+	}
+		
+.site-footer {
+	color: #ffffff;
+	}
+
+
+/* Main content CSS */
+
+main {
+	padding: 0 40px;
+}
+  
+main > section {
+	margin: 0 0 3em;
+}
+
+main h1 {
+	margin: 0 0 1em;
+}
+
+h1 { 
+	font-size: 200%;
+	line-height: 150%;
+	text-align: center;
+  }
+  
+main h1 em {
+	font-style: normal;
+	color: magenta;
+}	
+
+.subtitle {
+	color: red;
+	font-style: italic;
+	font-size: 80%;
+}	
+
+.page-header {
+	margin: 0 0 1.5em;
+}
+
+.page-nav {
+	background: #237878;
+}
+	
+
+		
+/* lead section */
+
+
+.lead-display-absolute {
+	position: relative;
+	width: 900px;
+	height: 400px;
+	background: url("images/garbage-landscape-wide-900.jpg") no-repeat;
+}
+
+.primary-statement-absolute {
+	color: #3a3a3a;
+	letter-spacing: 2px;
+	text-align: left;
+	width: 600px;
+	position: absolute;
+	top: 25px;
+	left: 70px;	
+}
+
+.secondary-statement-absolute {
+	color: magenta;
+	letter-spacing: 2px;
+	text-align: left;
+	width: 600px;
+	position: absolute;
+	top: 225px;
+	left: 270px;
+	display: none;
+}
+
+
+.primary-statement {
+	color: yellowgreen;
+	letter-spacing: 1px;
+}
+		
+.lead-display img {
+	width: 900px;
+	height: 675px;
+}
+
+.lead-intro {
+	font-family: georgia, serif;
+	font-size: 125%;
+	line-height: 133%;
+	color: #7a7a7a;
+
+}
+
+
+/* showcase section CSS */	
+
+	/* grid CSS */
+
+.showcase-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-row-gap: 20px ;
+        justify-items: center;
+        align-items: start;
+        justify-content:space-between;
+		}
+                        
+.showcase-item {
+    width: 300px; /*should match the width of your images + width of border (if any) */
+    text-align: center;
+    } 
+        
+  /* css for styling the p/caption under the image */       
+    .showcase-item p {
+        margin: .25em 0;
+        line-height: 135%;
+		font-size: 90%;
+		}
+		
+	.showcase-item p a {		
+		color: yellowgreen;
+		text-decoration: none;
+	}
+	
+	.showcase-item p a:hover {		
+		color: #bb3456;
+	}
+		
+
+	/* flexbox CSS	*/
+
+.showcase-container {
+	display: flex;
+	justify-content: space-between;
+		  }
+		  
+.showcase-item {
+	/*width: 264px;*/
+  }		 
+		  
+
+
+/* About CSS */
+
+.profile-group h2 {
+	margin-bottom: 0;
+}
+
+.profile-container {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 2rem 4rem;
+	align-items: center;
+}
+
+.profile-container h3 {
+	/* for styling the profile heading */
+}
+
+.profile-container img {
+	border-radius: 50%;
+	max-width: 100%;
+	height: auto;
+}
+
+.profile-container p {
+
+}
+
+.profile-container a {
+	color: #928320;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.profile-container a:hover {
+	color: #51C8E6;
+}
+
+/* time-line CSS */
+
+.timeline-container {
+	display: grid;
+	width: 90%;
+	grid-template-columns: 1.5fr 4fr;
+	gap: 0rem 2rem;
+	align-items: top;
+}
+
+.timeline-container h3 {
+	color: magenta;
+}
+	
+
+/* Reviews Page CSS */
+
+
+.wrapper-grid {
+	display: grid;
+  	gap: 0.5em 0.5em;
+  	grid-template-columns: 1fr 1fr 1fr;
+  	grid-template-rows: auto auto auto;
+	grid-template-areas:
+            "header header header"
+            "main main aside"
+            "footer footer footer";
+}
+
+.wrapper-grid .site-header {
+	grid-area: header;
+}
+
+.wrapper-grid .micro-reviews {
+	grid-area: aside;
+	font-size: 16px;
+	line-height: 1.5;
+	padding-top: 1.5rem; /* matches page-header padding-top; */
+	padding-right: 2.5rem; /* = 40px */
+}
+
+.wrapper-grid main {
+	grid-area: main;
+	padding: 0 2rem 0 2.5rem;
+}
+
+.wrapper-grid .site-footer {
+	grid-area: footer;
+}
+
+.article-label {
+	color: #9a9a9a;
+}
+
+.micro-reviews h1 {
+	font-size: 2rem;
+	text-align: left;
+	color: green;
+	margin: 0 0 1em;
+}
+
+.micro-reviews h2 {
+	font-size: 1.5rem;
+	color: magenta;
+	margin: 0;
+}
+
+main article {
+	padding: 0 0 2em;
+}
+main article h1 {
+	font-size: 2rem;
+	margin: 0 0 1em;
+}
+
+
